@@ -1,0 +1,145 @@
+.contactsection{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: #06232f;
+
+}
+.contactsection h1{
+  font-size: 50px;
+  font-weight: 400;
+  margin: 7rem 0 0 0;
+  color: aqua;
+
+}
+.form-container {
+   width: 100%;
+   min-height: 80vh;
+   padding: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:space-around;
+   align-items: center;
+   position: relative;
+    
+  }
+.map1location{
+    margin-bottom: 1rem;
+    padding: 20px;
+}
+  form {
+   
+    width:500px;   
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+   
+
+  }
+  .svgcontact{
+    height: fit-content;
+    
+  }
+  .svgcontact circle {
+      animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+ 
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    min-width: 100%;
+    max-width: 450px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group input::placeholder,
+  .input-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    /* background: rgba(68, 166, 81, 0.2); */
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  @media only screen and (max-width: 768px) {   
+    .form-container {
+      width: 100%;
+      min-height: 10vh;
+      
+       
+     }
+     form {
+   
+      width:100%;   
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+     
+  
+    }
+     .input-group input,
+     .input-group textarea {
+      min-width: 100%;
+       max-width: 100%;
+       width: 100%;
+       padding: 10px;
+       border: none;
+       border-radius: 5px;
+       background: rgba(255, 255, 255, 0.2);
+       color: #fff;
+       font-size: 16px;
+       outline: none;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     }
+     
+  }

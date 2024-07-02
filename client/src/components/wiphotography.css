@@ -1,0 +1,71 @@
+.wiphotographydiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #12181b;
+    border: none;
+    padding: 20px 20px 100px 20px;
+
+    
+}
+.wiphotographydiv::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    border: none;
+    background-color: #06232f;
+    clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
+}
+.wiphotographydiv h1{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom:2rem;
+    color: aqua;
+
+}
+.wiphotographydiv ul{
+    width: 70%;
+    z-index: 10;
+    font-size: 26px;
+    font-weight: 300;
+    padding:20px 10px 20px 10px;
+}
+.wiphotographydiv ul li{
+    
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: start;
+
+}
+@media only screen and (max-width: 768px) {
+    .wiphotographydiv h1{
+        font-size: 40px;
+        font-weight: 400;
+        margin:2rem 0;
+        color: aqua;
+        text-align: center;
+    
+    }
+    .wiphotographydiv::before{
+        display: none;
+    }
+    .wiphotographydiv ul{
+        width: 100%;
+        padding: 20px 5px;
+    }
+    .wiphotographydiv ul li{
+        font-size: 26px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: white;
+        padding-bottom: 20px;
+    
+    }
+}

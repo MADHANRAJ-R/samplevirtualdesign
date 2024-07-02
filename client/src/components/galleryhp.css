@@ -1,0 +1,113 @@
+.galleryhpsec{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #06232f;
+    padding: 20px;
+
+
+}
+.ghp1{
+    position: relative;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 1rem;
+    z-index: 1;
+
+}
+.ghp1 p{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: yellow;
+    position: absolute;
+    top: 350px;
+}
+.ghp1 h1{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 400px;
+    text-decoration: underline;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2rem;
+    
+
+}
+.slider1{
+    background: url('../Assets/home-img-1.avif');
+    background-size: cover;
+    width: 80%;
+    border-radius: 1rem;
+    border: 2px solid aqua;
+    height: 80vh;
+    box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+    animation: animate1 20s infinite;
+}
+@keyframes animate1{
+    20%{
+        background: url('../Assets/home-img-2.avif');
+        background-size: cover; 
+    }
+    40%{
+        background: url('../Assets/home-img-3.avif');
+        background-size: cover; 
+    }
+    60%{
+        background: url('../Assets/home-img-1.avif');
+        background-size: cover; 
+    }
+    80%{
+        background: url('../Assets/home-img-2.avif');
+        background-size: cover; 
+    }
+    100%{
+        background: url('../Assets/home-img-1.avif');
+        background-size: cover; 
+    }
+}
+@media only screen and (max-width: 768px) { 
+    .galleryhpsec{
+        width: 100%;
+        height: 70vh;
+        
+        
+    }
+    .center{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 2rem;
+        
+    
+    }
+    .slider1{
+        width: 100%;
+        height: 60vh;
+        border-radius: 0;
+        
+    }  
+    .ghp1{
+        border-radius: 0;
+    }
+
+    .squarediv{
+        display: none;
+    }
+}
