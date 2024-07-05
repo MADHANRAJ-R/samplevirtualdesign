@@ -43,7 +43,7 @@ footer{
     gap: 10px;
 }
 .footerdiv1 span a{
-    font-size: max(1vw,23px);
+    font-size: max(1vw,22px);
     text-decoration: none;
     color: white;
     text-wrap: nowrap;
