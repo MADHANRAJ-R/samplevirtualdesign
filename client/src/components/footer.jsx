@@ -26,12 +26,12 @@ const Footer = () => {
           <div className="spanfooter">
             <span>
               <img src={maillogo} alt="" />
-              <p>parthipan@gmail.com</p>
+              <a href="mailto:vrvirtualrealitypicx@gmail.com">vrvirtualrealitypicx@gmail.com</a>
             </span>
             <span>
               <img src={phonelogo} alt="" />
-              <p>Olaipatti, Salem, Tamilnadu</p>
-            </span>
+              <a className="contact-a" href="tel:8489409293">+91-8489409293</a>            
+          </span>
           </div>
 
           <div className="socialmedialink">
@@ -39,7 +39,7 @@ const Footer = () => {
             <img src={messenger} alt="companylogo" />
           </div>
         </div>
-        <div className="routerlink">
+        <div className="routerlink1">
           <p onClick={()=>handleNavigation('/')}>Home</p>
           <p onClick={()=>handleNavigation('/AboutUs')}>About us</p>
           <p onClick={()=>handleNavigation('/Gallery')}>Gallery</p>
