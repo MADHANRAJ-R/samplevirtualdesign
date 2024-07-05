@@ -4,7 +4,7 @@
     min-height: 100vh;
     justify-content:center;
     gap: 2rem;
-    padding: 20px 10px;
+    padding: 150px 10px 50px 10px;
     flex-wrap: wrap;
     align-items: center;
     /* border: 1px solid wheat; */
@@ -35,8 +35,6 @@
     backdrop-filter: blur(5px);
     box-shadow: 0 25px 45px rgba(0,0,0,0.1);
     border: 1px solid rgba(255,255,255,0.5);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
     background: rgba(109, 109, 108, 0.1);
     border-radius: 10px;
     animation: animate 10s linear infinite;
@@ -69,7 +67,7 @@
     width: 40px;
     height: 40px;
     z-index: 1;
-    background: rgba(230, 11, 201, 0.3);
+    background: rgba(204, 230, 11, 0.3);
   backdrop-filter: blur(10px);
     border-radius: 50%;
 
@@ -200,8 +198,7 @@
   backdrop-filter: blur(5px);
   box-shadow: 0 25px 45px rgba(0,0,0,0.1);
   border: 1px solid rgba(255,255,255,0.5);
-  border-right: 1px solid rgba(255,255,255,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+ 
   background: rgba(109, 109, 108, 0.1);
   border-radius: 10px;
   animation: animate 10s linear infinite;
@@ -218,10 +215,11 @@
 }
 .whoweare1div .square1:nth-child(1){
   /* top: 50px; */
-  top: 30px;
-  left: 40px;
   /* left: 20px; */
   width: 120px;
+  top: 50%;
+  left: 50%;
+
   height: 120px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
@@ -229,19 +227,19 @@ backdrop-filter: blur(10px);
 
 }
 .whoweare1div .square1:nth-child(2){
-  top: 30px;
+  top: 80px;
   right:20px;
   width: 40px;
   height: 40px;
   z-index: 1;
-  background: rgba(230, 11, 201, 0.3);
+  background: rgba(197, 230, 11, 0.3);
 backdrop-filter: blur(10px);
   border-radius: 50%;
 
 }
 .whoweare1div .square1:nth-child(3){
-  top: 30px;
-  left: 30px;
+  top: 150px;
+  left: 10px;
   width: 60px;
   background: rgba(7, 231, 78, 0.3);
 backdrop-filter: blur(10px);
