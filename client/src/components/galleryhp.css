@@ -77,16 +77,16 @@
   .slider1 .square:nth-child(1) {
     top: 40px;
     left: 0px;
-    width: max(6vw,80px);
-    height: max(6vw,80px);
+    width: max(6vw,50px);
+    height: max(6vw,50px);
     animation: animate 10s linear infinite;
 
   }
   .slider1 .square:nth-child(2) {
     top: 0px;
     right: 40px;
-    width: max(6vw,80px);
-    height: max(6vw,80px);
+    width: max(6vw,50px);
+    height: max(6vw,50px);
     z-index: 1;
     animation: animate-sqr1 10s linear infinite;
 
@@ -94,16 +94,16 @@
   .slider1 .square:nth-child(3) {
     bottom: 40px;
     right: 0px;
-    width: max(6vw,80px);
-    height: max(6vw,80px);
+    width: max(6vw,50px);
+    height: max(6vw,50px);
     animation: animate-sqr3 10s linear infinite;
 
   }
   .slider1 .square:nth-child(4) {
     bottom: 0px;
     left: 40px;
-    width: max(6vw,80px);
-    height: max(6vw,80px);
+    width: max(6vw,50px);
+    height: max(6vw,50px);
     z-index: 1;
     animation: animate-sqr2 10s linear infinite;
 
