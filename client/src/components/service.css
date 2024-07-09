@@ -72,11 +72,13 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .otherWeb-card h2 {
-  color:aqua;
-  letter-spacing: 1px;
+  color:white;
+  font-size: 24px;
+  font-weight: 400;
 }
 .otherWeb-card p {
-  color:rgb(255, 255, 255);
+  color:rgb(179, 179, 179);
+  /* color: gray; */
  
 }
 .webdiv:hover .otherweb-div {
@@ -96,16 +98,16 @@
   animation-play-state: paused;
 }
 
-.otherWeb-card a button {
+.visit-btn{
   padding: 15px 20px;
   font-size: 16px;
   font-weight: 600;
-  letter-spacing: 1.5px;
+ 
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px); 
+   
   border: 1px solid rgba(255, 255, 255, 1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
-  color:goldenrod;
+  
+  color:white;
   border-radius: 1.5rem;
 }
 

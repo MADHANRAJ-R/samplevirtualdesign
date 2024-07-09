@@ -6,6 +6,17 @@ import messenger from "../Assets/messenger.png";
 import maillogo from "../Assets/message.png";
 import phonelogo from "../Assets/telephone.png";
 import companylogo from "../Assets/home-img-1.avif";
+import flash1 from "../Assets/FLASH-s/Flash.jpg";
+import twilight5 from "../Assets/TWILIGHT-s/FB_IMG_1673001476189.jpg";
+import twilight4 from "../Assets/TWILIGHT-s/FB_IMG_1673001470852.jpg";
+import staging1 from "../Assets/STAGING-s/1J8A5315.jpg";
+import single1 from "../Assets/SINGLE-s/IMG_0979.jpg";
+import hdr5 from "../Assets/HDR-s/IMG_0666.jpg";
+import hdr6 from "../Assets/HDR-s/IMG_0672.jpg";
+import flash6 from "../Assets/FLASH-s/IMG_1128.jpg";
+
+
+
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -46,14 +57,14 @@ const Footer = () => {
           <p onClick={()=>handleNavigation('/Contact')}>Contact</p>
         </div>
         <div onClick={()=>handleNavigation('/Gallery')} className="footerimgdiv">
-          <img src={companylogo} alt="companylogo" />
-          <img src={companylogo} alt="companylogo" />
-          <img src={companylogo} alt="companylogo" />
-          <img src={companylogo} alt="companylogo" />
-          <img src={companylogo} alt="companylogo" />
-          <img src={companylogo} alt="companylogo" />
-          <img src={companylogo} alt="companylogo" />
-          <img src={companylogo} alt="companylogo" />
+          <img src={flash1} alt="companylogo" />
+          <img src={flash6} alt="companylogo" />
+          <img src={hdr5} alt="companylogo" />
+          <img src={hdr6} alt="companylogo" />
+          <img src={twilight4} alt="companylogo" />
+          <img src={twilight5} alt="companylogo" />
+          <img src={staging1} alt="companylogo" />
+          <img src={single1} alt="companylogo" />
         </div>
       </div>
     </footer>

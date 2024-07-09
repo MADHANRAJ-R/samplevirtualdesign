@@ -29,10 +29,11 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
   background: rgba(109, 109, 108, 0.1);
   border-radius: 10px;
-  animation: animate 10s linear infinite;
-  animation-delay: calc(-1s * var(--i));
+  
+ 
   /* z-index: 1; */
 }
+
 @keyframes animate {
   0%,
   100% {
@@ -42,31 +43,66 @@
     transform: translateY(40px);
   }
 }
+@keyframes animate-sqr1 {
+  0%,
+  100% {
+    transform: translateX(40px);
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+}
+@keyframes animate-sqr2 {
+  0%,
+  100% {
+    transform: translateX(-40px);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+}
+@keyframes animate-sqr3 {
+  0%,
+  100% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
 .banner .square:nth-child(1) {
-  top: 0px;
+  top: 40px;
   left: 0px;
   width: max(6vw,80px);
     height: max(6vw,80px);
+    animation: animate 10s linear infinite;
+  /* animation-delay: calc(-1s * var(--i)); */
 }
 .banner .square:nth-child(2) {
   top: 0px;
-  right:0px;
+  right:40px;
   width: max(6vw,80px);
     height: max(6vw,80px);
   z-index: 1;
+  animation: animate-sqr1 10s linear infinite;
+  /* animation-delay: calc(-1s * var(--i)); */
 }
 .banner .square:nth-child(3) {
-  bottom: 0px;
+  bottom: 40px;
   right: 0px;
   width: max(6vw,80px);
     height: max(6vw,80px);
+    animation: animate-sqr3 10s linear infinite;
+  /* animation-delay: calc(-1s * var(--i)); */
 }
 .banner .square:nth-child(4) {
   bottom: 0px;
-  left: 0px;
+  left: 40px;
   width: max(6vw,80px);
     height: max(6vw,80px);
   z-index: 1;
+  animation: animate-sqr2 10s linear infinite;
+  /* animation-delay: calc(-1s * var(--i)); */
 }
 /* .banner .square:nth-child(5) {
   top: 350px;
@@ -83,9 +119,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   z-index: 1;
+  /* color: goldenrod; */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+  
 }
 .homeh1h2 h1 {
   font-weight: bolder;
@@ -96,34 +135,34 @@
   font-size: 30px;
 }
 .banner {
-  background: url("../Assets/home-img-1.avif");
+  background: url("../Assets/TWILIGHT-s/FB_IMG_1673001476189.jpg");
   background-size: cover;
   width: 80%;
   border-radius: 1rem;
   border: 2px solid aqua;
   height: 80vh;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
-  animation: animate2 20s infinite;
+  animation: animate2 30s infinite;
 }
 @keyframes animate2 {
   20% {
-    background: url("../Assets/home-img-2.avif");
+    background: url("../Assets/TWILIGHT-s/FB_IMG_1673001470852.jpg");
     background-size: cover;
   }
   40% {
-    background: url("../Assets/home-img-3.avif");
+    background: url("../Assets/TWILIGHT-s/164 Brush Creek Drive 00138t.jpg");
     background-size: cover;
   }
   60% {
-    background: url("../Assets/home-img-1.avif");
+    background: url("../Assets/TWILIGHT-s/FB_IMG_1673001476189.jpg");
     background-size: cover;
   }
   80% {
-    background: url("../Assets/home-img-2.avif");
+    background: url("../Assets/TWILIGHT-s/FB_IMG_1673001470852.jpg");
     background-size: cover;
   }
   100% {
-    background: url("../Assets/home-img-1.avif");
+    background: url("../Assets/TWILIGHT-s/164 Brush Creek Drive 00138t.jpg");
     background-size: cover;
   }
 }
@@ -142,7 +181,7 @@
   }
   
   .homeh1h2 {
-    color: white;
+    /* color: white; */
     display: flex;
     padding: 20px;
     flex-direction: column;

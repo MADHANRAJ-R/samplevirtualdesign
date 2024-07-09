@@ -58,6 +58,11 @@ footer{
     background-color: white;
     color: white;
 }
+.routerlink1{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
 .routerlink1 p{
     font-size: 24px;
     margin-right: 10px;

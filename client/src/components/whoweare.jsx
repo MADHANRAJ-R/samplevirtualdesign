@@ -1,6 +1,8 @@
 import React from "react";
 import companylogo from "../Assets/home-img-1.avif";
 import "./whoweare.css";
+import twilight5 from "../Assets/TWILIGHT-s/FB_IMG_1673001476189.jpg";
+
 
 const Whoweare = () => {
   return (
@@ -26,7 +28,7 @@ const Whoweare = () => {
           </p>
         </div>
         <div className="whoweare2div">
-          <img src={companylogo} alt="companylogo" />
+          <img src={twilight5} alt="companylogo" />
         </div>
       </div>
     </section>
