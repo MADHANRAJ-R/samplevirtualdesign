@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://samplevirtualdesign.vercel.app"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
