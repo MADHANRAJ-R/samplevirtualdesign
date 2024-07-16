@@ -34,7 +34,7 @@ const Contact = (props) => {
       setMessage("");
     } catch (error) {
       console.error("Error sending email:", error);
-      alert("Error sending email. Please try again da.");
+      alert("Error sending email. Please try again.");
     }
   };
   return (
