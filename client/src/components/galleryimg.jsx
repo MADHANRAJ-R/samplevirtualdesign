@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import "./galleryimg.css"
 import $ from 'jquery';
+import img1 from "../Assets/FLASH-s/Flash.jpg";
+
 import flash1 from "../Assets/FLASH-s/Flash.jpg";
 import flash2 from "../Assets/FLASH-s/IMG_1077.jpg";
 import flash3 from "../Assets/FLASH-s/IMG_1081.jpg";

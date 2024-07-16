@@ -25,101 +25,126 @@ const Service = () => {
           <div className="container owl-carousel owl-theme">
             <div className="card item">
               <div className="img_container">
-                <img src={hdr4} alt="companylogo" />
+                <img
+                 
+                  src={hdr4}
+                  alt="companylogo"
+                />
               </div>
 
               <div className="info">
                 <span className="name">HDR BLENDING</span>
 
                 <p className="about">
-                The indoor space can be expertly edited to achieve optimal views,
-                ensuring exceptional quality and meeting standard time frames.
+                  The indoor space can be expertly edited to achieve optimal
+                  views, ensuring exceptional quality and meeting standard time
+                  frames.
                 </p>
               </div>
 
               <div className="footer">
                 <div className="btn">
-                  <button>Visit More...</button>
+                  <button onClick={()=>handleNavigation('/Gallery')}>Visit More...</button>
                 </div>
               </div>
             </div>
 
             <div className="card item">
               <div className="img_container">
-                <img src={flash1} alt="companylogo" />
+                <img
+                  
+                  src={flash1}
+                  alt="companylogo"
+                />
               </div>
 
               <div className="info">
                 <span className="name">FLASH AMBIENT</span>
 
                 <p className="about">
-                Color enhancement, sky transformation, and border accents vividly capture the essence of the outdoors.
+                  Color enhancement, sky transformation, and border accents
+                  vividly capture the essence of the outdoors.
                 </p>
               </div>
 
               <div className="footer">
                 <div className="btn">
-                  <button>Visit More...</button>
+                  <button onClick={()=>handleNavigation('/Gallery')}>Visit More...</button>
                 </div>
               </div>
             </div>
 
             <div className="card item">
               <div className="img_container">
-                <img src={single4} alt="companylogo" />
+                <img
+                  
+                  src={single4}
+                  alt="companylogo"
+                />
               </div>
 
               <div className="info">
                 <span className="name">DAY TO DUSK & NIGHT</span>
 
                 <p className="about">
-                A Day to Dusk photo typically captures the exterior of the property, expertly showcasing its enchanting charm at dusk.
+                  A Day to Dusk photo typically captures the exterior of the
+                  property, expertly showcasing its enchanting charm at dusk.
                 </p>
               </div>
 
               <div className="footer">
                 <div className="btn">
-                  <button>Visit More...</button>
+                  <button onClick={()=>handleNavigation('/Gallery')}>Visit More...</button>
                 </div>
               </div>
             </div>
 
             <div className="card item">
               <div className="img_container">
-                <img src={twilight4} alt="companylogo" />
+                <img
+                  
+                  src={twilight4}
+                  alt="companylogo"
+                />
               </div>
 
               <div className="info">
                 <span className="name">TWILIGHT</span>
 
                 <p className="about">
-                A twilight photo is expertly taken of the exterior property, capturing the beautiful and serene sunset of dusk.
+                  A twilight photo is expertly taken of the exterior property,
+                  capturing the beautiful and serene sunset of dusk.
                 </p>
               </div>
 
               <div className="footer">
                 <div className="btn">
-                  <button>Visit More...</button>
+                  <button onClick={()=>handleNavigation('/Gallery')}>Visit More...</button>
                 </div>
               </div>
             </div>
 
             <div className="card item">
               <div className="img_container">
-                <img src={staging1} alt="companylogo" />
+                <img
+                  
+                  src={staging1}
+                  alt="companylogo"
+                />
               </div>
 
               <div className="info">
                 <span className="name">VIRTUAL STAGING</span>
 
                 <p className="about">
-                Virtually staging a home with Home Styler is simple, allowing you to effortlessly do it from the screen interface.
+                  Virtually staging a home with Home Styler is simple, allowing
+                  you to effortlessly do it from the screen interface.
                 </p>
               </div>
 
               <div className="footer">
                 <div className="btn">
-                  <button>Visit More...</button>
+                  <button onClick={()=>handleNavigation('/Gallery')}>Visit More...</button>
                 </div>
               </div>
             </div>
