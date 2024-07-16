@@ -23,11 +23,11 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    margin:1rem auto;
+    margin:0.5rem auto;
     gap: 20px;
     background-color:#0f2027 ;
   backdrop-filter: blur(10px);
-  padding:10px 20px;
+  padding:5px 20px;
   border: 1px solid rgba(0, 208, 255, 1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     
@@ -37,16 +37,18 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 50px;
+    min-width: 50px;
+    margin-right: 10px;
+
 
 }
 .companyimg{
     width: 100%;
-    max-width: 40px;
-    min-width: 40px;
-   
+    /* transform: scale(0.8); */
+    border: 1px solid goldenrod;
     object-fit: cover;
-    border-radius: 50%;
-    margin-right: 10px;
+    border-radius:50%;
     cursor: pointer;
 }
 .routerlink{

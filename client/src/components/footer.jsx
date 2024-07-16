@@ -5,7 +5,6 @@ import fblogo from "../Assets/fblogo.jpg";
 import messenger from "../Assets/messenger.png";
 import maillogo from "../Assets/message.png";
 import phonelogo from "../Assets/telephone.png";
-import companylogo from "../Assets/home-img-1.avif";
 import flash1 from "../Assets/FLASH-s/Flash.jpg";
 import twilight5 from "../Assets/TWILIGHT-s/FB_IMG_1673001476189.jpg";
 import twilight4 from "../Assets/TWILIGHT-s/FB_IMG_1673001470852.jpg";

@@ -20,35 +20,30 @@ const Ourvision = () => {
           </div> */}
           <li>
             <img className="listImg" src={tick} alt="tick" />
-            <span>Pioneering the future of photography editing with cutting-edge
-            technology at Infinity Infotech.</span>
+            <span>Leading the way in photography editing with advanced technology at Virtual Reality Services.</span>
           </li>
           <li>
             <img className="listImg" src={tick} alt="tick" />
             <span>
-            Revolutionizing image enhancement through state-of-the-art tech in
-            the Infinity Infotech editing industry.
+            Transforming image enhancement through cutting-edge tech in the Virtual Reality editing sector.
             </span>
           </li>
           <li>
             <img className="listImg" src={tick} alt="tick" />
             <span>
-            Innovating the photography landscape at Infinity Infotech with the
-            latest technological advancements.
+            Shaping the future of photography at Virtual Reality Services with innovative technological solutions.
             </span>
           </li>
           <li>
             <img className="listImg" src={tick} alt="tick" />
             <span>
-            Harnessing the power of AI and advanced algorithms for unparalleled
-            editing precision at Infinity Infotech.
+            Utilizing AI and advanced algorithms to achieve unmatched editing precision at Virtual Reality Services.
             </span>
           </li>
           <li>
             <img className="listImg" src={tick} alt="tick" />
             <span>
-            Photography is the art of translating one's unique perspective into
-            images that tell a compelling story and evoke emotions.
+            Photography captures unique perspectives and emotions, crafting compelling visual narratives at Virtual Reality Services.
             </span>
           </li>
         </ul>

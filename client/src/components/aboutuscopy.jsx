@@ -13,25 +13,25 @@ const Aboutuscopy = () => {
           <img src={notification} alt="companylogo" />
           <b>On-time notifications</b>
           <p>
-            Photography serves as a timeless notification, freezing moments in
-            time to capture and preserve the essence of fleeting experiences.
+            Photography acts as a timeless alert, freezing moments to capture
+            and preserve the essence of fleeting experiences.
           </p>
         </div>
         <div className="aboutuscopycard">
           <img src={service} alt="companylogo" />
           <b>On-site and remote support</b>
           <p>
-            Photography provides on-site and remote support, allowing the
-            documentation of both immediate surroundings and distant landscapes.
+            Photography offers on-site and remote assistance, enabling
+            documentation of both local environments and distant landscapes
           </p>
         </div>
         <div className="aboutuscopycard">
           <img src={valueformoney} alt="valueformoney" />
           <b>On-value for money</b>
           <p>
-            Value for money is achieved by investing wisely in equipment and
-            services balance between cost and quality without unnecessary
-            expenses.
+            Getting the best value for money involves smart investments in
+            equipment and services, balancing cost and quality while minimizing
+            unnecessary expenses.
           </p>
         </div>
       </div>

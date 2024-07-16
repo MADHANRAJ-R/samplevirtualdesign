@@ -1,7 +1,6 @@
 import React from "react";
-import companylogo from "../Assets/home-img-1.avif";
 import "./whoweare.css";
-import twilight5 from "../Assets/TWILIGHT-s/FB_IMG_1673001476189.jpg";
+import twilight5 from "../Assets/VRLOGO.png";
 
 
 const Whoweare = () => {
@@ -17,14 +16,14 @@ const Whoweare = () => {
 
           <h1>Who We Are?</h1>
           <p>
-            <span className="wwp3"> Helping you to</span> <br />
-            <span className="wwp2">Premier Photo Editing</span>
-            <span className="wwp3">.</span>
+            <span className="wwp3"> Helping you with</span> <br />
+            <span className="wwp2">top-tier Photo Editing</span>
+            <span className="wwp3">, supported by</span>
             <br /> <span className="wwp2">Highly trained</span>
             <br />
             <span className="wwp3">and</span>{" "}
             <span className="wwp2">dedicated</span> <br />
-            <span className="wwp3">editors for Each.</span>
+            <span className="wwp3">editors for each project.</span>
           </p>
         </div>
         <div className="whoweare2div">

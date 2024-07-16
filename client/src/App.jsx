@@ -6,6 +6,7 @@ import GalleryRoute from "./Router/galleryroute";
 import ContactRoute from "./Router/contactroute";
 
 function App() {
+  
   return (
     <main>
       <Routes>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Gallery" element={<GalleryRoute />} />
         <Route path="/contact" element={<ContactRoute />} />
       </Routes>
+      
     </main>
   );
 }

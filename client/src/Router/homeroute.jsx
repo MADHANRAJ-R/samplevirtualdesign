@@ -13,7 +13,9 @@ import Footer from '../components/footer';
 
 
 const Homeroute = () => {
+  
   return (
+    
     <div id='home'>
     <Header active1="active" />
     {/* <Contact /> */}
@@ -21,6 +23,7 @@ const Homeroute = () => {
     <Whoweare />
     <Aboutus />
     <Service />
+    
     <Ourvision />
     <Footer />
     

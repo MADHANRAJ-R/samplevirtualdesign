@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './header.css';
-import companylogo from '../Assets/3d-view.png';
+import companylogo from '../Assets/VRLOGO3.png';
 import fblogo from "../Assets/fblogo.jpg";
 import messenger from "../Assets/messenger.png";
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -22,34 +22,6 @@ const Header = (props) => {
     }, 200);
   };
   
-  // const handleGallery = () => {
-  //   setTimeout(() => {
-  //     navigate("/Gallery");
-  //     window.scrollTo(0, 0);
-  //   }, 200);
-  // };
-
-  // const handleHome = () => {
-  //   setTimeout(() => {
-  //     navigate("/");
-  //     window.scrollTo(0, 0);
-  //   }, 200);
-  // };
-
-  // const handleAbout = () => {
-    
-  //   setTimeout(() => {
-  //     navigate("/AboutUs");
-  //     window.scrollTo(0, 0);
-  //   }, 200);
-  // };
-
-  // const handleContact = () => {
-  //   setTimeout(() => {
-  //     navigate("/Contact");
-  //     window.scrollTo(0, 0);
-  //   }, 200);
-  // };
   return (
     <div className="headerdiv">
       <header>

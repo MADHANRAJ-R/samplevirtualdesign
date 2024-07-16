@@ -7,8 +7,8 @@ const Carousel = () => {
       <div className="center1 banner">
         
           <div className="homeh1h2">
-            <h1>We Are Creative Agency</h1>
-            <h3>Focused On Client Relationship</h3>
+            <h1>We specialize in creative solutions</h1>
+            <h3>With a focus on client relationships</h3>
           </div>
         
         <div className="squarediv">
