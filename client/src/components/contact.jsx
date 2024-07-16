@@ -18,7 +18,7 @@ const Contact = (props) => {
     }
 
     try {
-      await axios.post("https://samplevirtualdesignserver.vercel.app", {
+      await axios.post("https://samplevirtualdesignserver.vercel.app/contact", {
     
         name,
         phone,
