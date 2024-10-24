@@ -232,8 +232,9 @@ const Contact = (props) => {
 
     </div>
     {/* eslint-disable-next-line */}
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56498.572199814254!2d77.59764224743398!3d13.00925441073348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1649294a5637%3A0xb1f8b77e331512cf!2sBengaluru%20Palace!5e0!3m2!1sen!2sin!4v1716899625079!5m2!1sen!2sin" className="map1location" width="100%" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56498.572199814254!2d77.59764224743398!3d13.00925441073348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1649294a5637%3A0xb1f8b77e331512cf!2sBengaluru%20Palace!5e0!3m2!1sen!2sin!4v1716899625079!5m2!1sen!2sin" className="map1location" width="100%" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7812.017750061634!2d77.94710550576193!3d11.764425515089084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babff43e988609f%3A0xa47f044e16e656e3!2sM.%20Olaipatti!5e0!3m2!1sen!2sin!4v1729791834961!5m2!1sen!2sin" className="map1location" width="100%" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+
     
   );
 };
