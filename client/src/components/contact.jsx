@@ -18,7 +18,7 @@ const Contact = (props) => {
     }
 
     try {
-      await axios.post("https://samplevirtualdesignserver.vercel.app/contact", {
+      await axios.post(props.apiRoute, {
     
         name,
         phone,

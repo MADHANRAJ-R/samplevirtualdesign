@@ -5,8 +5,6 @@ require("dotenv").config();
 
 const app = express();
 
-const PORT = process.env.PORT || 3001;
-
 app.use(express.json());
 
 app.use(
@@ -24,8 +22,7 @@ app.post("/contact", async (req, res) => {
   try {
     const { name, phone, email, message } = req.body;
 
-    console.log("Received data:");
-    console.log({
+    console.log("Received data:", {
       name,
       phone,
       email,
@@ -76,9 +73,7 @@ app.post("/contact", async (req, res) => {
       success: true,
       message: "Email sent successfully",
     });
-
   } catch (error) {
-
     console.error("EMAIL ERROR:");
     console.error(error);
 
@@ -90,6 +85,4 @@ app.post("/contact", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+module.exports = app;
