@@ -8,7 +8,7 @@ const contactroute = () => {
   return (
     <div>  
         <Header active4="active" />
-        <Contact apiRoute="https://virtualrealitypicx.vercel.app/Contact" />
+        <Contact apiRoute="https://samplevirtualdesignserver.vercel.app/contact" />
         <Footer />
 
     </div>

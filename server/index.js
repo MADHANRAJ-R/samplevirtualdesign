@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://virtualrealitypicx.vercel.app",
+    origin: "https://samplevirtualdesign.vercel.app",
     methods: ["GET", "POST"],
   })
 );
