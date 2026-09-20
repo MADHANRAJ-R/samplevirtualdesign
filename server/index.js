@@ -5,6 +5,8 @@ require("dotenv").config();
 
 const app = express();
 
+const PORT = process.env.PORT || 3001;
+
 app.use(express.json());
 
 app.use(
@@ -14,10 +16,12 @@ app.use(
   })
 );
 
+// Test route
 app.get("/", (req, res) => {
   res.send("Email server is running");
 });
 
+// Contact route
 app.post("/contact", async (req, res) => {
   try {
     const { name, phone, email, message } = req.body;
@@ -56,11 +60,8 @@ app.post("/contact", async (req, res) => {
         <h2>New Contact Enquiry</h2>
 
         <p><strong>Name:</strong> ${name}</p>
-
         <p><strong>Email:</strong> ${email}</p>
-
         <p><strong>WhatsApp Number:</strong> ${phone}</p>
-
         <p><strong>Message:</strong> ${message || "No message"}</p>
       `,
     };
@@ -73,6 +74,7 @@ app.post("/contact", async (req, res) => {
       success: true,
       message: "Email sent successfully",
     });
+
   } catch (error) {
     console.error("EMAIL ERROR:");
     console.error(error);
@@ -85,4 +87,7 @@ app.post("/contact", async (req, res) => {
   }
 });
 
-module.exports = app;
+// START SERVER
+app.listen(PORT, () => {
+  console.log(`Email server is running on port ${PORT}`);
+});
