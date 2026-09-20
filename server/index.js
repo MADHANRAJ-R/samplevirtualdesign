@@ -1,74 +1,95 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 
 const app = express();
+
 const PORT = process.env.PORT || 3001;
 
-app.use(bodyParser.json());
-app.use(
-  cors({
-    origin: ["https://samplevirtualdesign.vercel.app"],
-    methods: ["POST", "GET", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
 app.use(express.json());
 
-//Below are the api routes for the email templates
+app.use(
+  cors({
+    origin: "https://samplevirtualdesign.vercel.app",
+    methods: ["GET", "POST"],
+  })
+);
 
-// Email Templates
-const obj = {
-  Contact: (name, email, phone, message) => {
-    let mailContent = `<p>You got a new visitor for parthiban website.</p>
-                     <p>Enquiry: Contact<br /> 
-                     
-                     Name: ${name} <br />
-                     Email: ${email} <br />
-                     WhatsApp Number: ${phone}`;
+app.get("/", (req, res) => {
+  res.send("Email server is running");
+});
 
-    if (message.trim() !== "") {
-      mailContent += `<br /> Message: ${message}`;
+app.post("/contact", async (req, res) => {
+  try {
+    const { name, phone, email, message } = req.body;
+
+    console.log("Received data:");
+    console.log({
+      name,
+      phone,
+      email,
+      message,
+    });
+
+    if (!name || !phone || !email) {
+      return res.status(400).json({
+        success: false,
+        message: "Name, phone and email are required",
+      });
     }
-    mailContent += `</p>`;
-    return mailContent;
-  }
-};
-// Main Service
-app.post("/contact", (req, res) => {
-    const {name, phone, email, message } = req.body;
-    //nodemailer transporter
+
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "madhansr1509@gmail.com",
-        pass: process.env.PASS,
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
-  
-    // Email content
+
+    await transporter.verify();
+
     const mailOptions = {
-      from: email,
-      to: "madhansr1509@gmail.com",
-      subject: "New visitor for parthiban website",
-      html: obj.Contact(name, email, phone, message),
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
+      replyTo: email,
+      subject: "New visitor for Parthiban website",
+
+      html: `
+        <h2>New Contact Enquiry</h2>
+
+        <p><strong>Name:</strong> ${name}</p>
+
+        <p><strong>Email:</strong> ${email}</p>
+
+        <p><strong>WhatsApp Number:</strong> ${phone}</p>
+
+        <p><strong>Message:</strong> ${message || "No message"}</p>
+      `,
     };
-  
-    // Send email
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        console.error("Error sending email:", error);
-        res.status(500).send("Error sending email");
-      } else {
-        console.log("Email sent:", info.response);
-        res.status(200).send("Email sent successfully");
-      }
+
+    const info = await transporter.sendMail(mailOptions);
+
+    console.log("Email sent successfully:", info.messageId);
+
+    res.status(200).json({
+      success: true,
+      message: "Email sent successfully",
     });
-  });
-  //listen
-app.listen(process.env.PORT, () => {
-    console.log(`Server is running on port ${process.env.PORT}`);
-  });
-  
+
+  } catch (error) {
+
+    console.error("EMAIL ERROR:");
+    console.error(error);
+
+    res.status(500).json({
+      success: false,
+      message: "Error sending email",
+      error: error.message,
+    });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

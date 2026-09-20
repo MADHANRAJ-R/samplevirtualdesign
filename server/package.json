@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "start":"nodemon index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "nodemailer": "^6.9.14",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "nodemailer": "^6.10.1",
     "nodemon": "^3.1.4"
   }
 }
