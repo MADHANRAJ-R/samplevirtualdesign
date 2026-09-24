@@ -1,6 +1,6 @@
 import React from "react";
 import "./whoweare.css";
-import twilight5 from "../Assets/VRLOGO.png";
+import twilight5 from "../Assets/VRLOGO3.jpeg";
 
 
 const Whoweare = () => {
