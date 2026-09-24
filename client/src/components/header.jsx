@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './header.css';
-import companylogo from '../Assets/VRLOGO3.png';
+import companylogo from '../Assets/VRLOGO3.jpeg';
 import fblogo from "../Assets/fblogo.jpg";
 import messenger from "../Assets/messenger.png";
 import { FaBars, FaTimes } from 'react-icons/fa';
